@@ -8,5 +8,59 @@
 
 /***********************************************************************************/
 
+:root {
+    --primary-color: #d91f26;
+}
 
+.header-main .nav > li > a{
+    padding: 0 15px;
+}
 
+/* SECTION 1 */
+/*.sec-1 .slider {
+    position: relative;
+} */
+
+.sec-1 .description {
+    position: absolute;
+}
+
+/* SECTION 2 */
+.sec-2 .upcoming-events {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sec-2 .upcoming-events-img {
+    position: relative;
+}
+
+.sec-2 .upcoming-events-text {
+    position: absolute;
+    top: 40%;
+}
+
+.sec-2 .upcoming-events-text .text-title {
+    text-align: center;
+}
+
+.sec-2 .upcoming-events-text .text-link {
+    font-size: 20px;
+    color: #fff;
+}
+
+.sec-2 .upcoming-events-text .text-link:hover {
+    color: var(--primary-color);
+}
+
+.sec-2 .upcoming-events-text .text-desc {
+    padding: 5px 20px;
+    font-size: 14px;
+    text-align: justify;
+    color: #fff;
+}
+
+.sec-2 .btn-primary {
+
+}
