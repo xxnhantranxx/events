@@ -1508,7 +1508,7 @@ p.copyright-404 a:hover { color: #36b051 }
 
 @media (max-width:800px) {
 
-   .header-main { height: 50px !important }
+   /* .header-main { height: 50px !important } */
 
    #logo img { max-height: 50px !important; padding: 8px 0 !important }
 

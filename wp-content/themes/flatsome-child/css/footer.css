@@ -1,0 +1,192 @@
+/* Call */
+.block-contact-fixed{
+    position: fixed;
+    top: 50%;
+    right: 15px;
+    transform: translate(0,-50%);
+    z-index: 99;
+}
+.call_pluss_desktop .block-contact-fixed{
+    display: flex;
+    flex-direction: column;
+}
+.call_pluss_desktop .block-contact-fixed .fixed-item{
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+}
+.call_pluss_desktop .block-contact-fixed .fixed-item .icon-showdesktop{
+    width: 52px;
+    height: 52px;
+    background-color: var(--svg-main-color);
+    border-radius: 50%;
+    position: relative;
+    box-shadow: rgb(0 0 0 / 16%) 0px 10px 36px 0px, rgb(0 0 0 / 6%) 0px 0px 0px 1px;
+    
+}
+.call_pluss_desktop .block-contact-fixed .fixed-item.tell_des .icon-showdesktop{
+    animation-name: ahihi_call;
+    animation-iteration-count: infinite;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes ahihi_call {
+    from {
+        transform: scale(.9);
+    }
+
+    to {
+        transform: scale(1);
+    }
+
+}
+.call_pluss_desktop .block-contact-fixed .fixed-item:hover .icon-showdesktop{
+    background-color: var(--svg-second-color);
+}
+.call_pluss_desktop .block-contact-fixed .fixed-item .show-descfixed{
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 170px;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 31px;
+    color: #FFFFFF;
+    background: var(--svg-second-color);
+    padding: 1px 10px;
+    display: none;
+}
+.call_pluss_desktop .block-contact-fixed .fixed-item:hover > .show-descfixed{
+    display: block;
+}
+.call_pluss_desktop .block-contact-fixed .fixed-item .show-descfixed::before{
+    content: '';
+    border-left: 16.5px solid var(--svg-second-color);
+    border-top: 16.5px solid transparent;
+    border-bottom: 16.5px solid transparent;
+    position: absolute;
+    right: -16.5px;
+    top: 0;
+}
+.call_pluss_desktop .block-contact-fixed .fixed-item.tell_des .icon-showdesktop::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%,-50%);
+    background: url('../img/calling-fixed.svg') no-repeat;
+    background-size: 100% 100%;
+}
+.call_pluss_desktop .block-contact-fixed .fixed-item.tell_des:hover .icon-showdesktop::before{
+    background: url('../img/calling-fixed-hover.svg') no-repeat;
+}
+.call_pluss_desktop .block-contact-fixed .fixed-item.email-fixed .icon-showdesktop::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%,-50%);
+    background: url('../img/email-fixed.svg') no-repeat;
+    background-size: 100% 100%;
+}
+.call_pluss_desktop .block-contact-fixed .fixed-item.email-fixed:hover .icon-showdesktop::before{
+    background: url('../img/email-fixed-hover.svg') no-repeat;
+}
+.call_pluss_desktop .block-contact-fixed .fixed-item.chatmess-fixed .icon-showdesktop::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%,-50%);
+    background: url('../img/chat-fixed.svg') no-repeat;
+    background-size: 100% 100%;
+}
+.call_pluss_desktop .block-contact-fixed .fixed-item.chatmess-fixed:hover .icon-showdesktop::before{
+    background: url('../img/chat-fixed-hover.svg') no-repeat;
+}
+.call_pluss_desktop .block-contact-fixed .fixed-item.download-fixed .icon-showdesktop::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%,-50%);
+    background: url('../img/download-fixed.svg') no-repeat;
+    background-size: 100% 100%;
+}
+.call_pluss_desktop .block-contact-fixed .fixed-item.download-fixed:hover .icon-showdesktop::before{
+    background: url('../img/download-fixed-hover.svg') no-repeat;
+}
+.section.calling{
+    padding-bottom: 0 !important;
+}
+.calling .list-profile-banner{
+    display: none;
+}
+.calling  .title-banner .outline-text{
+    margin-top: 0;
+    width: 330px;
+}
+.calling  .block-text-banner .title-banner{
+    display: flex;
+    align-items: center;
+}
+.calling  .block-text-banner  .left-intro-text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+/* Footer */
+.footer-section {
+    padding-top: 50px !important;
+}
+
+.footer-infor {
+    padding-bottom: 0px !important;
+}
+
+.footer-infor .text {
+    font-size: 14px;
+}
+
+.footer-infor .text .text-details {
+    font-weight: 500;
+}
+
+.footer-infor .text .text-link {
+    color: var(--primary-color);
+}
+
+.footer-events, .footer-province, .footer-contact {
+    font-size: 14px;
+}
+
+.footer-contact .text-link {
+    color: rgb(119, 119, 119);
+}
+
+.footer-bottom .text-bottom {
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.footer-bottom .text-bottom a {
+    color: rgb(119, 119, 119);
+}
+
+.absolute-footer {
+    display: none;
+}
