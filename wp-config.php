@@ -1,4 +1,5 @@
 <?php
+define( 'FS_METHOD', 'direct' );
 /**
  * Cấu hình cơ bản cho WordPress
  *

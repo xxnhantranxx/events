@@ -138,14 +138,6 @@ function custom_login_title($origtitle) {
 }
 add_filter('login_title', 'custom_login_title', 99);
 
-// change url of login logo link
-add_filter( 'login_headerurl', 'custom_loginlogo_url');
-
-function custom_loginlogo_url($url) {
-
-return "https://weblinks.vn/";
-
-}
 //Khởi tạo menu
 function register_settings_link(){
   register_setting( 'my-settings-group-2', 'link_video' );
@@ -808,3 +800,12 @@ function enqueuing_admin_scripts(){
 }
 
 add_action( 'admin_enqueue_scripts', 'enqueuing_admin_scripts' );
+function my_acf_google_map_api( $api ){
+	
+	$api['key'] = 'AIzaSyAZ7905zkgVD40XM_IJwaJo_oCqWadKguU';
+	
+	return $api;
+	
+}
+
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
