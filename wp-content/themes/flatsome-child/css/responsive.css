@@ -107,6 +107,15 @@
     .footer-bottom .text-bottom {
         padding-top: 10px;
     }
+    .events-wrapper.events-single .header-events-single .header-title {
+        font-size: 40px;
+    }
+    .events-wrapper.events-single .event-item-text .event-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
 }
 @media only screen and (max-width:414px){
 	

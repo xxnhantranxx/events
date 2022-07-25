@@ -377,3 +377,194 @@
     font-weight: 400;
     line-height: 40px;
 }
+
+/* KEYFRAMES */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* TAXONOMY_CATEGORIES_EVENTS */
+.breadcrumd_core.not-product {
+    display: none;
+}
+
+.events-wrapper.events-archive {
+    background-color: #f4f4f7;
+}
+
+.events-wrapper.events-archive .header-events-archive {
+    padding-top: 40px;
+}
+
+.events-wrapper.events-archive .header-events-archive p {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.events-wrapper.events-archive .header-events-archive .header-title {
+    font-size: 40px;
+    font-weight: 400;
+    color: #000;
+    animation: fadeUp ease-in 0.8s;
+}
+
+.events-wrapper.events-archive .event-item-loop {
+    margin-bottom: 30px;
+}
+
+.events-wrapper.events-archive .event-item-loop .event-item-link {
+    width: 100%;
+    max-height: 500px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    animation: fadeUp ease-in 0.8s;
+}
+
+.events-wrapper.events-archive .event-item-loop .event-item-text .event-title {
+    font-size: 24px;
+    font-weight: 400;
+    animation: fadeUp ease-in 0.8s;
+}
+
+.events-wrapper.events-archive .event-item-loop .event-item-text .event-list-item {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.events-wrapper.events-archive .event-item-loop .event-item-text .event-icon {
+    font-size: 18px;
+    margin: 3px 10px 0 0;
+}
+
+.events-wrapper.events-archive .event-item-loop .event-item-text .event-btns {
+    display: flex;
+    text-transform: uppercase;
+    margin-top: 20px;
+    animation: fadeUp ease-in 0.8s;
+}
+
+.events-wrapper.events-archive .event-item-loop .event-item-text .event-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    border-radius: 5px;
+    min-width: 140px;
+    height: 50px;
+}
+
+.events-wrapper.events-archive .event-item-loop .event-item-text .btn-buy-tickets {
+    background-color: var(--primary-color);
+    color: #fff;
+    margin-right: 20px;
+}
+
+.events-wrapper.events-archive .event-item-loop .event-item-text .btn-buy-tickets:hover {
+    opacity: 0.9;
+}
+
+.events-wrapper.events-archive .event-item-loop .event-item-text .btn-learn-more {
+    background-color: transparent;
+    border: solid 1px currentcolor;
+}
+
+/* SINGLE_EVENTS */
+.events-wrapper.events-single {
+    background-color: #f4f4f7;
+}
+
+.events-wrapper.events-single .header-events-single {
+    padding-top: 40px;
+}
+
+.events-wrapper.events-single .header-events-single p {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.events-wrapper.events-single .header-events-single .header-title {
+    font-size: 60px;
+    font-weight: 400;
+    color: #000;
+    animation: fadeUp ease-in 0.8s;
+}
+
+.events-wrapper.events-single .event-item-link {
+    width: 100%;
+    max-height: 500px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    animation: fadeUp ease-in 0.8s;
+}
+
+.events-wrapper.events-single .event-item-content .event-container{
+    margin: 50px 0 60px;
+    animation: fadeUp ease-in 0.8s;
+}
+
+.events-wrapper.events-single .event-item-content .event-bottom {
+    border-top: 1px solid #000;
+}
+
+.events-wrapper.events-single .event-item-content .event-navigation {
+    display: flex;
+    margin-top: 5px;
+}
+
+.events-wrapper.events-single .event-item-content .event-navigation .event-navigation-prev {
+    flex: 1;
+}
+
+.events-wrapper.events-single .event-item-content .event-navigation .event-navigation-link {
+    text-transform: uppercase;
+    padding: 5px 0;
+    animation: fadeUp ease-in 0.8s;
+}
+
+.events-wrapper.events-single .event-item-text .event-title {
+    font-size: 24px;
+    font-weight: 400;
+    animation: fadeUp ease-in 0.8s;
+}
+
+.events-wrapper.events-single .event-item-text .event-list-item {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.events-wrapper.events-single .event-item-text .event-icon {
+    font-size: 18px;
+    margin: 3px 10px 0 0;
+}
+
+.events-wrapper.events-single .event-item-text .event-btn {
+    text-transform: uppercase;
+    margin-top: 30px;
+    animation: fadeUp ease-in 0.8s;
+}
+
+.events-wrapper.events-single .event-item-text .btn-buy-tickets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 250px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.events-wrapper.events-single .event-item-text .btn-buy-tickets:hover {
+    opacity: 0.9;
+}
