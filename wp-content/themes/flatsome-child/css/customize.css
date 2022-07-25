@@ -75,6 +75,16 @@
     display: none !important;
 }
 
+.sec-1 .flickity-viewport .img > .img-inner::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    background:url(http://localhost/Events/wp-content/uploads/2022/07/pattern.png);
+    z-index: 9;
+}
 /* SECTION 2 */
 .sec-2 .service-events-header .header-title {
     font-size: 36px;
@@ -173,6 +183,7 @@
     position: absolute;
     top: 35%;
     color: var(--white-color);
+    z-index: 2;
 }
 
 .sec-4 .upcoming-events-box .text-link {
@@ -180,6 +191,14 @@
     width: 100%;
     font-size: 20px;
     font-weight: 400;
+    line-height: 1.3em;
+    height: 2.6em;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
 }
 
 .sec-4 .upcoming-events-box .text-link:hover {
@@ -191,8 +210,24 @@
     font-size: 14px;
     text-align: justify;
     color: #fff;
+    line-height: 1.3em;
+    height: 5.5em;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
 }
-
+.sec-4 .upcoming-events-box .box-image .overlay-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #07070770;
+    z-index: 1;
+}
 .sec-4 .section-content .btn-primary {
     background-color: var(--primary-color);
 }
